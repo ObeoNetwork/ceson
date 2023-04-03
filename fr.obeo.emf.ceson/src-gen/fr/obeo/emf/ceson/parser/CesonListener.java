@@ -1,6 +1,5 @@
-// Generated from Ceson.g4 by ANTLR 4.3
+// Generated from Ceson.g4 by ANTLR 4.7.2
 package fr.obeo.emf.ceson.parser;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -9,222 +8,205 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface CesonListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by the {@code ObjectLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
+	 * Enter a parse tree produced by {@link CesonParser#model}.
 	 * @param ctx the parse tree
 	 */
-	void enterObjectLiteral(@NotNull CesonParser.ObjectLiteralContext ctx);
+	void enterModel(CesonParser.ModelContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code ObjectLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
+	 * Exit a parse tree produced by {@link CesonParser#model}.
 	 * @param ctx the parse tree
 	 */
-	void exitObjectLiteral(@NotNull CesonParser.ObjectLiteralContext ctx);
-
+	void exitModel(CesonParser.ModelContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code DateLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
+	 * Enter a parse tree produced by {@link CesonParser#definition}.
 	 * @param ctx the parse tree
 	 */
-	void enterDateLiteral(@NotNull CesonParser.DateLiteralContext ctx);
+	void enterDefinition(CesonParser.DefinitionContext ctx);
 	/**
-	 * Exit a parse tree produced by the {@code DateLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
+	 * Exit a parse tree produced by {@link CesonParser#definition}.
 	 * @param ctx the parse tree
 	 */
-	void exitDateLiteral(@NotNull CesonParser.DateLiteralContext ctx);
-
-	/**
-	 * Enter a parse tree produced by the {@code BooleanLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void enterBooleanLiteral(@NotNull CesonParser.BooleanLiteralContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code BooleanLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void exitBooleanLiteral(@NotNull CesonParser.BooleanLiteralContext ctx);
-
-	/**
-	 * Enter a parse tree produced by the {@code Reference}
-	 * labeled alternative in {@link CesonParser#feature}.
-	 * @param ctx the parse tree
-	 */
-	void enterReference(@NotNull CesonParser.ReferenceContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code Reference}
-	 * labeled alternative in {@link CesonParser#feature}.
-	 * @param ctx the parse tree
-	 */
-	void exitReference(@NotNull CesonParser.ReferenceContext ctx);
-
-	/**
-	 * Enter a parse tree produced by {@link CesonParser#className}.
-	 * @param ctx the parse tree
-	 */
-	void enterClassName(@NotNull CesonParser.ClassNameContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CesonParser#className}.
-	 * @param ctx the parse tree
-	 */
-	void exitClassName(@NotNull CesonParser.ClassNameContext ctx);
-
-	/**
-	 * Enter a parse tree produced by the {@code ArrayLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void enterArrayLiteral(@NotNull CesonParser.ArrayLiteralContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ArrayLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void exitArrayLiteral(@NotNull CesonParser.ArrayLiteralContext ctx);
-
-	/**
-	 * Enter a parse tree produced by {@link CesonParser#featureList}.
-	 * @param ctx the parse tree
-	 */
-	void enterFeatureList(@NotNull CesonParser.FeatureListContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CesonParser#featureList}.
-	 * @param ctx the parse tree
-	 */
-	void exitFeatureList(@NotNull CesonParser.FeatureListContext ctx);
-
-	/**
-	 * Enter a parse tree produced by the {@code RealLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void enterRealLiteral(@NotNull CesonParser.RealLiteralContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code RealLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void exitRealLiteral(@NotNull CesonParser.RealLiteralContext ctx);
-
+	void exitDefinition(CesonParser.DefinitionContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Ref}
 	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void enterRef(@NotNull CesonParser.RefContext ctx);
+	void enterRef(CesonParser.RefContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code Ref}
 	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void exitRef(@NotNull CesonParser.RefContext ctx);
-
-	/**
-	 * Enter a parse tree produced by the {@code StringLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void enterStringLiteral(@NotNull CesonParser.StringLiteralContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code StringLiteral}
-	 * labeled alternative in {@link CesonParser#value}.
-	 * @param ctx the parse tree
-	 */
-	void exitStringLiteral(@NotNull CesonParser.StringLiteralContext ctx);
-
-	/**
-	 * Enter a parse tree produced by {@link CesonParser#array}.
-	 * @param ctx the parse tree
-	 */
-	void enterArray(@NotNull CesonParser.ArrayContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CesonParser#array}.
-	 * @param ctx the parse tree
-	 */
-	void exitArray(@NotNull CesonParser.ArrayContext ctx);
-
-	/**
-	 * Enter a parse tree produced by {@link CesonParser#model}.
-	 * @param ctx the parse tree
-	 */
-	void enterModel(@NotNull CesonParser.ModelContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CesonParser#model}.
-	 * @param ctx the parse tree
-	 */
-	void exitModel(@NotNull CesonParser.ModelContext ctx);
-
-	/**
-	 * Enter a parse tree produced by {@link CesonParser#definition}.
-	 * @param ctx the parse tree
-	 */
-	void enterDefinition(@NotNull CesonParser.DefinitionContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CesonParser#definition}.
-	 * @param ctx the parse tree
-	 */
-	void exitDefinition(@NotNull CesonParser.DefinitionContext ctx);
-
+	void exitRef(CesonParser.RefContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code IntLiteral}
 	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void enterIntLiteral(@NotNull CesonParser.IntLiteralContext ctx);
+	void enterIntLiteral(CesonParser.IntLiteralContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code IntLiteral}
 	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void exitIntLiteral(@NotNull CesonParser.IntLiteralContext ctx);
-
+	void exitIntLiteral(CesonParser.IntLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RealLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterRealLiteral(CesonParser.RealLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RealLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitRealLiteral(CesonParser.RealLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code StringLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterStringLiteral(CesonParser.StringLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code StringLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitStringLiteral(CesonParser.StringLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BooleanLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterBooleanLiteral(CesonParser.BooleanLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BooleanLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitBooleanLiteral(CesonParser.BooleanLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code DateLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterDateLiteral(CesonParser.DateLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code DateLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitDateLiteral(CesonParser.DateLiteralContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code EnumLiteral}
 	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void enterEnumLiteral(@NotNull CesonParser.EnumLiteralContext ctx);
+	void enterEnumLiteral(CesonParser.EnumLiteralContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code EnumLiteral}
 	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void exitEnumLiteral(@NotNull CesonParser.EnumLiteralContext ctx);
-
+	void exitEnumLiteral(CesonParser.EnumLiteralContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CesonParser#enumName}.
+	 * Enter a parse tree produced by the {@code ObjectLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void enterEnumName(@NotNull CesonParser.EnumNameContext ctx);
+	void enterObjectLiteral(CesonParser.ObjectLiteralContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CesonParser#enumName}.
+	 * Exit a parse tree produced by the {@code ObjectLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
 	 * @param ctx the parse tree
 	 */
-	void exitEnumName(@NotNull CesonParser.EnumNameContext ctx);
-
+	void exitObjectLiteral(CesonParser.ObjectLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayLiteral(CesonParser.ArrayLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayLiteral}
+	 * labeled alternative in {@link CesonParser#value}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayLiteral(CesonParser.ArrayLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CesonParser#array}.
+	 * @param ctx the parse tree
+	 */
+	void enterArray(CesonParser.ArrayContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CesonParser#array}.
+	 * @param ctx the parse tree
+	 */
+	void exitArray(CesonParser.ArrayContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CesonParser#object}.
 	 * @param ctx the parse tree
 	 */
-	void enterObject(@NotNull CesonParser.ObjectContext ctx);
+	void enterObject(CesonParser.ObjectContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link CesonParser#object}.
 	 * @param ctx the parse tree
 	 */
-	void exitObject(@NotNull CesonParser.ObjectContext ctx);
-
+	void exitObject(CesonParser.ObjectContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CesonParser#featureList}.
+	 * @param ctx the parse tree
+	 */
+	void enterFeatureList(CesonParser.FeatureListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CesonParser#featureList}.
+	 * @param ctx the parse tree
+	 */
+	void exitFeatureList(CesonParser.FeatureListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CesonParser#enumName}.
+	 * @param ctx the parse tree
+	 */
+	void enterEnumName(CesonParser.EnumNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CesonParser#enumName}.
+	 * @param ctx the parse tree
+	 */
+	void exitEnumName(CesonParser.EnumNameContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CesonParser#className}.
+	 * @param ctx the parse tree
+	 */
+	void enterClassName(CesonParser.ClassNameContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CesonParser#className}.
+	 * @param ctx the parse tree
+	 */
+	void exitClassName(CesonParser.ClassNameContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code Containment}
 	 * labeled alternative in {@link CesonParser#feature}.
 	 * @param ctx the parse tree
 	 */
-	void enterContainment(@NotNull CesonParser.ContainmentContext ctx);
+	void enterContainment(CesonParser.ContainmentContext ctx);
 	/**
 	 * Exit a parse tree produced by the {@code Containment}
 	 * labeled alternative in {@link CesonParser#feature}.
 	 * @param ctx the parse tree
 	 */
-	void exitContainment(@NotNull CesonParser.ContainmentContext ctx);
+	void exitContainment(CesonParser.ContainmentContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Reference}
+	 * labeled alternative in {@link CesonParser#feature}.
+	 * @param ctx the parse tree
+	 */
+	void enterReference(CesonParser.ReferenceContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Reference}
+	 * labeled alternative in {@link CesonParser#feature}.
+	 * @param ctx the parse tree
+	 */
+	void exitReference(CesonParser.ReferenceContext ctx);
 }

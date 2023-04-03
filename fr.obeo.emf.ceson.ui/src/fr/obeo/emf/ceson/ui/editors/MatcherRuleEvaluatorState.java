@@ -1,18 +1,20 @@
 package fr.obeo.emf.ceson.ui.editors;
 
-import org.eclipse.jface.text.rules.ICharacterScanner;
-
 import com.google.common.base.CharMatcher;
+
+import org.eclipse.jface.text.rules.ICharacterScanner;
 
 public class MatcherRuleEvaluatorState {
 	/**
 	 * The scanner to process.
 	 */
 	private ICharacterScanner scanner;
+
 	/**
 	 * The count of characters read from the scanner in this instance.
 	 */
 	private int readCount;
+
 	/**
 	 * Mark at the last of the last matched word.
 	 */
@@ -46,7 +48,7 @@ public class MatcherRuleEvaluatorState {
 	}
 
 	public void consummeWhiteSpaces() {
-		while (CharMatcher.WHITESPACE.matches((char) readChar())) {
+		while (CharMatcher.whitespace().matches((char)readChar())) {
 			readCount++;
 		}
 		readCount--;
@@ -79,8 +81,7 @@ public class MatcherRuleEvaluatorState {
 	}
 
 	/**
-	 * Rewind to the last word matched in this instance. Repeated calls will
-	 * have the same effect as 1 call.
+	 * Rewind to the last word matched in this instance. Repeated calls will have the same effect as 1 call.
 	 */
 	public void rewindToLastWord() {
 		if (lastWordMark >= 0) {
@@ -102,19 +103,18 @@ public class MatcherRuleEvaluatorState {
 	}
 
 	/**
-	 * Returns <code>true</code> when the scanner in the current state matches a
-	 * word.
+	 * Returns <code>true</code> when the scanner in the current state matches a word.
 	 * 
 	 * @return <code>true</code> if the scanner matches a word.
 	 */
 	public boolean matchesWord() {
 		boolean result = false;
-		char c = (char) readChar();
-		if (CharMatcher.JAVA_LETTER_OR_DIGIT.matches(c)) {
+		char c = (char)readChar();
+		if (CharMatcher.javaLetterOrDigit().matches(c)) {
 			result = true;
 		}
-		while (CharMatcher.JAVA_LETTER_OR_DIGIT.matches(c)) {
-			c = (char) readChar();
+		while (CharMatcher.javaLetterOrDigit().matches(c)) {
+			c = (char)readChar();
 		}
 		unreadChar();
 		lastWordMark = readCount;
@@ -122,17 +122,17 @@ public class MatcherRuleEvaluatorState {
 	}
 
 	/**
-	 * Returns <code>true</code> when the scanner in the current state matches a
-	 * series of white spaces followed by the specified char.
+	 * Returns <code>true</code> when the scanner in the current state matches a series of white spaces
+	 * followed by the specified char.
 	 * 
-	 * @return <code>true</code> if the scanner matches a series of white spaces
-	 *         followed by the specified char.
+	 * @return <code>true</code> if the scanner matches a series of white spaces followed by the specified
+	 *         char.
 	 */
 	public boolean matchesChar(char searched) {
 		int mark = readCount;
-		char c = (char) readChar();
-		while (CharMatcher.WHITESPACE.matches(c)) {
-			c = (char) readChar();
+		char c = (char)readChar();
+		while (CharMatcher.whitespace().matches(c)) {
+			c = (char)readChar();
 		}
 		if (c == searched) {
 			return true;
