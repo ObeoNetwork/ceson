@@ -8,15 +8,15 @@
 
 	<groupId>fr.obeo.emf.ceson</groupId>
 	<artifactId>fr.obeo.emf.ceson.releng.parent</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>2.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Ceson Project</name>
 
 	<properties>
 		<acceleo-version>3.5.0</acceleo-version>
-		<tycho-version>0.22.0</tycho-version>
-		<eclipse-site>http://download.eclipse.org/releases/luna</eclipse-site>
-		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/</orbit-site>
+		<tycho-version>2.7.5</tycho-version>
+		<eclipse-site>http://download.eclipse.org/releases/2023-03</eclipse-site>
+		<orbit-site>https://download.eclipse.org/tools/orbit/downloads/2022-03/</orbit-site>
 	</properties>
 	<repositories>
 		<repository>
@@ -29,11 +29,11 @@
 			<layout>p2</layout>
 			<url>${orbit-site}</url>
 		</repository>
-		<repository>
+<!-- 		<repository>
 			<id>acceleo</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/acceleo/updates/milestones/3.6/S201505131324</url>
-		</repository>
+		</repository>-->
 	</repositories>
 
 	<pluginRepositories>
