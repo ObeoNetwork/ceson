@@ -2,7 +2,7 @@
 <feature
       id="fr.obeo.emf.ceson.feature"
       label="Feature"
-      version="1.0.0.qualifier">
+      version="2.0.0.qualifier">
 
    <description>
       This features provides the CesonRuntime API that allows parsing
